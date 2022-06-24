@@ -51,7 +51,7 @@ useEffect to handle this connection*/
 //-------------------handling connection-----------------------
 
     useEffect(() => {
-       const s= io("http://localhost:3001")  // url of server // this function returns a socket(state)
+       const s= io("https://server-txt.herokuapp.com/")  // url of server // this function returns a socket(state)
        setSocket(s)
         return () => {
          s.disconnect()  //cleaning up 
